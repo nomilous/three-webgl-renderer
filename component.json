@@ -1,0 +1,17 @@
+{
+  "name": "three-webgl-renderer",
+  "repo": "nomilous/three-webgl-renderer",
+  "description": "three.js core component",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "nomilous/three": "*",
+    "nomilous/three-render-common": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ]
+}
