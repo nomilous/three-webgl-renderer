@@ -14,6 +14,7 @@ if (typeof THREE.ImmediateRenderObject == 'undefined') THREE.ImmediateRenderObje
 if (typeof THREE.Sprite                == 'undefined') THREE.Sprite                = function() {}; 
 if (typeof THREE.LensFlare             == 'undefined') THREE.LensFlare             = function() {}; 
 
+if (THREE.MeshFaceMaterial             == 'undefined') THREE.MeshFaceMaterial      = function() {}; 
 
 
 /**
