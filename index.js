@@ -1,5 +1,17 @@
-module.exports = THREE = require('three');
-require('three-render-common');
+module.exports = THREE = require('three'); 
+require('three-render-common'); 
+
+/* instanceof-U-later */ 
+
+if (typeof THREE.BufferGeometry        == 'undefined') THREE.BufferGeometry        = function() {}; 
+if (typeof THREE.Mesh                  == 'undefined') THREE.Mesh                  = function() {}; 
+if (typeof THREE.Line                  == 'undefined') THREE.Line                  = function() {}; 
+if (typeof THREE.ParticleSystem        == 'undefined') THREE.ParticleSystem        = function() {}; 
+if (typeof THREE.ImmediateRenderObject == 'undefined') THREE.ImmediateRenderObject = function() {}; 
+if (typeof THREE.Sprite                == 'undefined') THREE.Sprite                = function() {}; 
+if (typeof THREE.LensFlare             == 'undefined') THREE.LensFlare             = function() {}; 
+
+
 
 /**
  * @author mikael emtinger / http://gomo.se/
