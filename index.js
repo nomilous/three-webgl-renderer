@@ -3,6 +3,9 @@ require('three-render-common');
 
 /* instanceof-U-later */ 
 
+if (typeof THREE.Light                 == 'undefined') THREE.Light                 = function() {}; 
+if (typeof THREE.Bone                  == 'undefined') THREE.Bone                  = function() {}; 
+
 if (typeof THREE.BufferGeometry        == 'undefined') THREE.BufferGeometry        = function() {}; 
 if (typeof THREE.Mesh                  == 'undefined') THREE.Mesh                  = function() {}; 
 if (typeof THREE.Line                  == 'undefined') THREE.Line                  = function() {}; 
