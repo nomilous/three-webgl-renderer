@@ -3,25 +3,31 @@ require('three-render-common');
 
 /* instanceof-U-later */ 
 
-if (typeof THREE.Light                  == 'undefined') THREE.Light                  = function() {}; 
-if (typeof THREE.Bone                   == 'undefined') THREE.Bone                   = function() {}; 
+if ('undefined' == typeof THREE.Light                 ) THREE.Light                  = function() {}; 
+if ('undefined' == typeof THREE.Bone                  ) THREE.Bone                   = function() {}; 
 
-if (typeof THREE.BufferGeometry         == 'undefined') THREE.BufferGeometry         = function() {}; 
-if (typeof THREE.Mesh                   == 'undefined') THREE.Mesh                   = function() {}; 
-if (typeof THREE.Line                   == 'undefined') THREE.Line                   = function() {}; 
-if (typeof THREE.ParticleSystem         == 'undefined') THREE.ParticleSystem         = function() {}; 
-if (typeof THREE.ImmediateRenderObject  == 'undefined') THREE.ImmediateRenderObject  = function() {}; 
-if (typeof THREE.Sprite                 == 'undefined') THREE.Sprite                 = function() {}; 
-if (typeof THREE.LensFlare              == 'undefined') THREE.LensFlare              = function() {}; 
+if ('undefined' == typeof THREE.BufferGeometry        ) THREE.BufferGeometry         = function() {}; 
+if ('undefined' == typeof THREE.Mesh                  ) THREE.Mesh                   = function() {}; 
+if ('undefined' == typeof THREE.Line                  ) THREE.Line                   = function() {}; 
+if ('undefined' == typeof THREE.ParticleSystem        ) THREE.ParticleSystem         = function() {}; 
+if ('undefined' == typeof THREE.ImmediateRenderObject ) THREE.ImmediateRenderObject  = function() {}; 
+if ('undefined' == typeof THREE.Sprite                ) THREE.Sprite                 = function() {}; 
+if ('undefined' == typeof THREE.LensFlare             ) THREE.LensFlare              = function() {}; 
 
-if (typeof THREE.MeshFaceMaterial       == 'undefined') THREE.MeshFaceMaterial       = function() {}; 
-if (typeof THREE.MeshDepthMaterial      == 'undefined') THREE.MeshDepthMaterial      = function() {}; 
-if (typeof THREE.MeshNormalMaterial     == 'undefined') THREE.MeshNormalMaterial     = function() {}; 
-if (typeof THREE.MeshLambertMaterial    == 'undefined') THREE.MeshLambertMaterial    = function() {}; 
-if (typeof THREE.MeshPhongMaterial      == 'undefined') THREE.MeshPhongMaterial      = function() {}; 
-if (typeof THREE.LineBasicMaterial      == 'undefined') THREE.LineBasicMaterial      = function() {}; 
-if (typeof THREE.LineDashedMaterial     == 'undefined') THREE.LineDashedMaterial     = function() {}; 
-if (typeof THREE.ParticleSystemMaterial == 'undefined') THREE.ParticleSystemMaterial = function() {}; 
+if ('undefined' == typeof THREE.MeshFaceMaterial      ) THREE.MeshFaceMaterial       = function() {}; 
+if ('undefined' == typeof THREE.MeshDepthMaterial     ) THREE.MeshDepthMaterial      = function() {}; 
+if ('undefined' == typeof THREE.MeshNormalMaterial    ) THREE.MeshNormalMaterial     = function() {}; 
+if ('undefined' == typeof THREE.MeshBasicMaterial     ) THREE.MeshBasicMaterial      = function() {}; 
+if ('undefined' == typeof THREE.MeshLambertMaterial   ) THREE.MeshLambertMaterial    = function() {}; 
+if ('undefined' == typeof THREE.MeshPhongMaterial     ) THREE.MeshPhongMaterial      = function() {}; 
+if ('undefined' == typeof THREE.LineBasicMaterial     ) THREE.LineBasicMaterial      = function() {}; 
+if ('undefined' == typeof THREE.LineDashedMaterial    ) THREE.LineDashedMaterial     = function() {}; 
+if ('undefined' == typeof THREE.ParticleSystemMaterial) THREE.ParticleSystemMaterial = function() {}; 
+
+if ('undefined' == typeof THREE.DirectionalLight      ) THREE.DirectionalLight       = function() {}; 
+if ('undefined' == typeof THREE.PointLight            ) THREE.PointLight             = function() {}; 
+if ('undefined' == typeof THREE.SpotLight             ) THREE.SpotLight              = function() {}; 
+if ('undefined' == typeof THREE.HemisphereLight       ) THREE.HemisphereLight        = function() {}; 
 
 
 /**
@@ -5435,6 +5441,9 @@ THREE.WebGLRenderer = function ( parameters ) {
 		material.addEventListener( 'dispose', onMaterialDispose );
 
 		var u, a, identifiers, i, parameters, maxLightCount, maxBones, maxShadows, shaderID;
+
+		// TODO: seems like shaderID can be moved to material.shaderID
+		//       making this if-stack unnecessary
 
 		if ( material instanceof THREE.MeshDepthMaterial ) {
 
