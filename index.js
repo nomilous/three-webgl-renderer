@@ -3,18 +3,25 @@ require('three-render-common');
 
 /* instanceof-U-later */ 
 
-if (typeof THREE.Light                 == 'undefined') THREE.Light                 = function() {}; 
-if (typeof THREE.Bone                  == 'undefined') THREE.Bone                  = function() {}; 
+if (typeof THREE.Light                  == 'undefined') THREE.Light                  = function() {}; 
+if (typeof THREE.Bone                   == 'undefined') THREE.Bone                   = function() {}; 
 
-if (typeof THREE.BufferGeometry        == 'undefined') THREE.BufferGeometry        = function() {}; 
-if (typeof THREE.Mesh                  == 'undefined') THREE.Mesh                  = function() {}; 
-if (typeof THREE.Line                  == 'undefined') THREE.Line                  = function() {}; 
-if (typeof THREE.ParticleSystem        == 'undefined') THREE.ParticleSystem        = function() {}; 
-if (typeof THREE.ImmediateRenderObject == 'undefined') THREE.ImmediateRenderObject = function() {}; 
-if (typeof THREE.Sprite                == 'undefined') THREE.Sprite                = function() {}; 
-if (typeof THREE.LensFlare             == 'undefined') THREE.LensFlare             = function() {}; 
+if (typeof THREE.BufferGeometry         == 'undefined') THREE.BufferGeometry         = function() {}; 
+if (typeof THREE.Mesh                   == 'undefined') THREE.Mesh                   = function() {}; 
+if (typeof THREE.Line                   == 'undefined') THREE.Line                   = function() {}; 
+if (typeof THREE.ParticleSystem         == 'undefined') THREE.ParticleSystem         = function() {}; 
+if (typeof THREE.ImmediateRenderObject  == 'undefined') THREE.ImmediateRenderObject  = function() {}; 
+if (typeof THREE.Sprite                 == 'undefined') THREE.Sprite                 = function() {}; 
+if (typeof THREE.LensFlare              == 'undefined') THREE.LensFlare              = function() {}; 
 
-if (typeof THREE.MeshFaceMaterial      == 'undefined') THREE.MeshFaceMaterial      = function() {}; 
+if (typeof THREE.MeshFaceMaterial       == 'undefined') THREE.MeshFaceMaterial       = function() {}; 
+if (typeof THREE.MeshDepthMaterial      == 'undefined') THREE.MeshDepthMaterial      = function() {}; 
+if (typeof THREE.MeshNormalMaterial     == 'undefined') THREE.MeshNormalMaterial     = function() {}; 
+if (typeof THREE.MeshLambertMaterial    == 'undefined') THREE.MeshLambertMaterial    = function() {}; 
+if (typeof THREE.MeshPhongMaterial      == 'undefined') THREE.MeshPhongMaterial      = function() {}; 
+if (typeof THREE.LineBasicMaterial      == 'undefined') THREE.LineBasicMaterial      = function() {}; 
+if (typeof THREE.LineDashedMaterial     == 'undefined') THREE.LineDashedMaterial     = function() {}; 
+if (typeof THREE.ParticleSystemMaterial == 'undefined') THREE.ParticleSystemMaterial = function() {}; 
 
 
 /**
