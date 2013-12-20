@@ -29,6 +29,8 @@ if ('undefined' == typeof THREE.PointLight            ) THREE.PointLight        
 if ('undefined' == typeof THREE.SpotLight             ) THREE.SpotLight              = function() {}; 
 if ('undefined' == typeof THREE.HemisphereLight       ) THREE.HemisphereLight        = function() {}; 
 
+if ('undefined' == typeof THREE.SkinnedMesh           ) THREE.SkinnedMesh            = function() {}; 
+
 
 /**
  * @author mikael emtinger / http://gomo.se/
